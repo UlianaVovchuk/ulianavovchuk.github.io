@@ -5,14 +5,6 @@ body {
 }
 
 body a,
-.agile_form input[type="submit"] {
-    -webkit-transition: 0.5s all;
-    -moz-transition: 0.5s all;
-    -o-transition: 0.5s all;
-    -ms-transition: 0.5s all;
-    transition: 0.5s all;
-    text-decoration: none;
-}
 
 h1,
 h2,
@@ -47,8 +39,8 @@ body a:focus {
 /*-- banner --*/
 
 .banner {
-     background: url(../images/11.jpg) fixed;
-   /*-- background: #487fa3 0px fixed; --*/
+    /* background: url(../images/11.jpg) fixed;*/
+   background:  #a0afb9 0px fixed; 
     background-size: cover;
     /* display: -moz-flex; 
     display: -webkit-flex;
@@ -69,6 +61,7 @@ body a:focus {
    
 }
 .banner-text {
+    border-radius: 5px;
     padding: 16em 0;
     text-align:center;
 }
@@ -83,7 +76,7 @@ body a:focus {
     /*--border: solid #7ecaf6;
     border-width: 4px;--*/
     color: rgb(255, 255, 255);
-    background: #567182;
+    background: #738eaa;
     padding: 0 1em;
     letter-spacing: 1px;
     font-weight: 800;
@@ -225,6 +218,8 @@ nav {
 }
 
 #menuToggle {
+    background: #738eaa;
+    border-radius: 8px;
     display: block;
     position: fixed;
     height: 40px;
@@ -235,7 +230,7 @@ nav {
 }
 
 #menuToggle span {
-    background: #7690a1;
+    background: #ffffff;
     display: block;
     height: 10%;
     left: 20%;
@@ -246,7 +241,7 @@ nav {
 
 #menuToggle span:before,
 #menuToggle span:after {
-    background: #7690a1;
+    background: #ffffff;
     content: '';
     display: block;
     height: 100%;
@@ -461,13 +456,15 @@ h4.agileinfo-head {
 }
 
 div#skills {
-    background: url(../images/lg.jpg) fixed;
+    /*background: url(../images/lg.jpg) fixed;*/
+    background: #a0afb9 0px fixed; 
     background-size: auto;
 }
 
 
 div#skills1 {
-    background: url(../images/11.jpg) fixed;
+    background:  #a0afb9 0px fixed; 
+   /*background: url(../images/11.jpg) fixed;*/
     background-size: cover;
 }
 
@@ -779,23 +776,28 @@ div#services {
 .nav-tabs>li.active>a,
 .nav-tabs>li.active>a:hover,
 .nav-tabs>li.active>a:focus {
+   
     color: #ffffff;
     cursor:pointer;
-    background: #03afdd;
-    border: solid 2px #03afdd;
+    background: #9a9a9a;
+    border: solid 2px #9a9a9a;
+    
+
 }
 
 .nav-tabs>li>a {
-    margin-right: 3px;
+    
+    margin-right: 0px;
     font-size: 1em;
     color: #212121;
-    border: solid 2px #03afdd;
-    border-radius: 0px;
+    
+    border-radius: 5px;
     -webkit-border-radius: 0px;
     -ms-border-radius: 0px;
     -o-border-radius: 0px;
     -moz-border-radius: 0px;
     padding: .5em 1em;
+    
     text-transform: capitalize;
 }
 
@@ -811,15 +813,18 @@ div#services {
 }
 
 .nav-tabs>li {
+   
     padding: 5px;
-    margin:  2px 5 0;
+    margin:  2px 2 0;
     
 }
 
 .nav-tabs>li>a:hover {
+    
     color: #FFFFFF;
-    background: #03afdd;
-    border: solid 2px #03afdd;
+    background: #9a9a9a;
+    border: solid 2px #9a9a9a;
+    
 }
 
 .w3_tab_img_left {
@@ -865,24 +870,28 @@ div#services {
 }
 
 
-/*-- //gallery --*/
+
 
 
 /*-- Contact --*/
 
 .contact-main-w3ls {
+   
     background:rgba(134, 213, 234, 0.28) ;
     background-size: cover;
+    text-align: center;
 }
 
 .contact-left-w3ls {
-    padding: 0;
+    
     background: rgba(0, 0, 0, 0.51);
-    border-right: 1px solid rgba(255, 255, 255, 0.29);
+    position: center;
+   /* border-right: 1px solid rgba(255, 255, 255, 0.29);*/
 }
 
 .contact-right-w3l h3:before {
-    width: 35%;
+    width: 3%;
+    position: center;
 }
 
 .contact-text-agileinfo a {
@@ -898,6 +907,7 @@ div#services {
 }
 
 .contact-left-w3ls h4 {
+    
     color: #49c7ed;
     font-weight: 600;
     margin-top: 0.4em;
@@ -1208,6 +1218,7 @@ ul.w3-links li a i.fa:hover {
 }
 @media screen and (max-width: 900px){
     h3.agileits-title{
+    
         margin-bottom: 1.2em;
         font-size: 2.3em;
     }
@@ -1287,6 +1298,7 @@ ul.w3-links li a i.fa:hover {
 
 @media screen and (max-width: 667px){
     .contact-grid-agileinfo {
+        
         padding: 2em;
     }
     .nav-tabs {
@@ -1409,9 +1421,12 @@ ul.w3-links li a i.fa:hover {
     .nav-tabs>li>a{
         padding:.5em 0.7em;
         font-size: 0.92em;
+        position: absolute;
     }
     .contact-grid-agileinfo {
+        
         padding: 1.5em 0.6em;
+        
     }
     ul.w3-links li {
         margin: 0 0.4em;
@@ -1472,6 +1487,7 @@ ul.w3-links li a i.fa:hover {
     }
     .contact-grid-agileinfo {
         padding: 1em 0 1.8em;
+        position: center;
     }
     .pull-right{
         float: none !important;
