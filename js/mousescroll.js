@@ -29,17 +29,7 @@
 	};
 
 
-	//
-	// Methods
-	//
-
-	/**
-	 * A simple forEach() implementation for Arrays, Objects and NodeLists
-	 * @private
-	 * @param {Array|Object|NodeList} collection Collection of items to iterate
-	 * @param {Function} callback Callback function for each iteration
-	 * @param {Array|Object|NodeList} scope Object/NodeList/Array that forEach is iterating over (aka `this`)
-	 */
+	
 	var forEach = function (collection, callback, scope) {
 		if (Object.prototype.toString.call(collection) === '[object Object]') {
 			for (var prop in collection) {
@@ -54,13 +44,7 @@
 		}
 	};
 
-	/**
-	 * Merge defaults with user options
-	 * @private
-	 * @param {Object} defaults Default settings
-	 * @param {Object} options User options
-	 * @returns {Object} Merged values of defaults and options
-	 */
+	
 	var extend = function ( defaults, options ) {
 		var extended = {};
 		forEach(defaults, function (value, prop) {
@@ -72,13 +56,7 @@
 		return extended;
 	};
 
-	/**
-	 * Calculate the easing pattern
-	 * @private
-	 * @param {String} type Easing pattern
-	 * @param {Number} time Time animation should take to complete
-	 * @returns {Number}
-	 */
+	
 	var easingPattern = function ( type, time ) {
 		var pattern;
 		if ( type === 'easeInQuad' ) pattern = time * time; // accelerating from zero velocity
@@ -96,14 +74,7 @@
 		return pattern || time; // no easing, no acceleration
 	};
 
-	/**
-	 * Calculate how far to scroll
-	 * @private
-	 * @param {Element} anchor The anchor element to scroll to
-	 * @param {Number} headerHeight Height of a fixed header, if any
-	 * @param {Number} offset Number of pixels by which to offset scroll
-	 * @returns {Number}
-	 */
+	
 	var getEndLocation = function ( anchor, headerHeight, offset ) {
 		var location = 0;
 		if (anchor.offsetParent) {
@@ -116,11 +87,7 @@
 		return location >= 0 ? location : 0;
 	};
 
-	/**
-	 * Determine the document's height
-	 * @private
-	 * @returns {Number}
-	 */
+	
 	var getDocumentHeight = function () {
 		return Math.max(
 			document.body.scrollHeight, document.documentElement.scrollHeight,
@@ -129,22 +96,12 @@
 		);
 	};
 
-	/**
-	 * Remove whitespace from a string
-	 * @private
-	 * @param {String} string
-	 * @returns {String}
-	 */
+	
 	var trim = function ( string ) {
 		return string.replace(/^\s+|\s+$/g, '');
 	};
 
-	/**
-	 * Convert data-options attribute into an object of key/value pairs
-	 * @private
-	 * @param {String} options Link-specific options as a data attribute string
-	 * @returns {Object}
-	 */
+	
 	var getDataOptions = function ( options ) {
 		var settings = {};
 		// Create a key/value pair for each setting
@@ -161,12 +118,7 @@
 		return settings;
 	};
 
-	/**
-	 * Update the URL
-	 * @private
-	 * @param {Element} anchor The element to scroll to
-	 * @param {Boolean} url Whether or not to update the URL history
-	 */
+	
 	var updateUrl = function ( anchor, url ) {
 		if ( history.pushState && (url || url === 'true') ) {
 			history.pushState( {
@@ -175,14 +127,7 @@
 		}
 	};
 
-	/**
-	 * Start/stop the scrolling animation
-	 * @public
-	 * @param {Element} toggle The element that toggled the scroll event
-	 * @param {Element} anchor The element to scroll to
-	 * @param {Object} settings
-	 * @param {Event} event
-	 */
+	
 	exports.animateScroll = function ( toggle, anchor, options, event ) {
 
 		// Options and overrides
@@ -209,13 +154,7 @@
 		// Update URL
 		updateUrl(anchor, settings.updateURL);
 
-		/**
-		 * Stop the scroll animation when it reaches its target (or the bottom/top of page)
-		 * @private
-		 * @param {Number} position Current position on the page
-		 * @param {Number} endLocation Scroll to location
-		 * @param {Number} animationInterval How much to scroll on this loop
-		 */
+		/
 		var stopAnimateScroll = function (position, endLocation, animationInterval) {
 			var currentLocation = root.pageYOffset;
 			if ( position == endLocation || currentLocation == endLocation || ( (root.innerHeight + currentLocation) >= documentHeight ) ) {
@@ -224,10 +163,7 @@
 			}
 		};
 
-		/**
-		 * Loop scrolling animation
-		 * @private
-		 */
+		
 		var loopAnimateScroll = function () {
 			timeLapsed += 16;
 			percentage = ( timeLapsed / parseInt(settings.speed, 10) );
@@ -237,19 +173,13 @@
 			stopAnimateScroll(position, endLocation, animationInterval);
 		};
 
-		/**
-		 * Set interval timer
-		 * @private
-		 */
+		
 		var startAnimateScroll = function () {
 			settings.callbackBefore( toggle, anchor ); // Run callbacks before animating scroll
 			animationInterval = setInterval(loopAnimateScroll, 16);
 		};
 
-		/**
-		 * Reset position to fix weird iOS bug
-		 * @link https://github.com/cferdinandi/smooth-scroll/issues/45
-		 */
+		
 		if ( root.pageYOffset === 0 ) {
 			root.scrollTo( 0, 0 );
 		}
@@ -259,11 +189,7 @@
 
 	};
 
-	/**
-	 * Initialize Smooth Scroll
-	 * @public
-	 * @param {Object} options User settings
-	 */
+	/
 	exports.init = function ( options ) {
 
 		// feature test
