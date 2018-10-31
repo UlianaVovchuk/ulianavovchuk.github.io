@@ -39,30 +39,16 @@ body a:focus {
 /*-- banner --*/
 
 .banner {
-    /* background: url(../images/11.jpg) fixed;*/
-   background:  #a0afb9 0px fixed; 
-    background-size: cover;
-    /* display: -moz-flex; 
-    display: -webkit-flex;
-    display: -ms-flex;
-    display: flex;
-    -moz-flex-direction: column;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -moz-justify-content: center;
-    -webkit-justify-content: center;
-    -ms-justify-content: center;
-    justify-content: center;
-      overflow: hidden;
-    text-align: center; 
-     display: -ms-flexbox;
-    -ms-flex-pack: center;*/
+    background: url(../images/uliana.jpg) fixed;
+ /*  background:  #a0afb9 0px fixed; */
+    background-size: contain;
+    background-repeat: round;
+    
    
 }
 .banner-text {
-    border-radius: 15px;
-    padding: 2em 0;
+    border-radius: 5px;
+    padding: 11em;
     text-align:center;
 }
 
@@ -73,8 +59,6 @@ body a:focus {
     font-size: 3.5em;
     line-height: 1.5em;
     display: inline-block;
-    /*--border: solid #7ecaf6;
-    border-width: 4px;--*/
     color: rgb(255, 255, 255);
     background: #738eaa;
     padding: 0 1em;
@@ -223,7 +207,7 @@ nav {
     display: block;
     position: fixed;
     height: 40px;
-    right: 15%;
+    right: 3%;
     top: 33px;
     width: 46px;
     z-index: 9999;
@@ -358,13 +342,12 @@ nav a:hover:after {
 
 /* about */
 
-
 h3.agileits-title {
     font-size: 2.5em;
     text-transform: uppercase;
     font-weight: 600;
     margin-bottom: 1.5em;
-    color: #9a9a9a;
+    color: #1853a1;
     text-align: center;
 }
 
@@ -1063,12 +1046,12 @@ ul.w3-links li a i.fa:hover {
 .agileits_w3layouts-footer {
     text-align: center;
     padding: 2em 0;
-    background: #717376;
+    background: #1853a1;
 }
 
 .agileits_w3layouts-footer p {
-    color: #000;
-    letter-spacing: 2px;
+    color: #fff;
+    letter-spacing: 1px;
 }
 
 .agileits_w3layouts-footer p a {
@@ -1080,7 +1063,7 @@ ul.w3-links li a i.fa:hover {
 }
 
 .agileits_w3layouts-footer p a:hover {
-    color: #363636;
+    color: #fff;
 }
 
 
@@ -1590,48 +1573,73 @@ ul.w3-links li a i.fa:hover {
     }
 }
 /* -- //Responsive code -- */
-.agile-about {
-         background: url(../images/uliana.jpg);
-        font-size: 9em;
-    background-position: center;
-    background-repeat: no-repeat repeat;
-    background-size: cover;
+.header-text {
+    color: #000
+    margin: 0.2em 0 0.2em;
+    font-size: 3em;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: right;
+   
+}
+
+ @import url(https://fonts.googleapis.com/css?family=Lora:400,700&subset=latin,cyrillic);
     
-    
+
+
+
+.post-title {
+  text-transform: uppercase;
+}
+.post-title h2 {
+  font-family: 'Lora', serif;
+  font-weight: normal;
+  line-height: 1.8em;
+  font-size: 50px;
+  color: #554848;
+  margin: 13px 0 8px;
+  letter-spacing: 0.08em;
+    text-align: right;
+}
+.post-meta {
+  font-size: 30px;
+  text-transform: uppercase;
+    text-align: right;
+  color: #000000;
+  letter-spacing: 0.2em;
+}
+
+
+
+
+   
+.header-text1 {
+ color: #000
+    margin: 0.2em 0 0.2em;
+    font-size: 2em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: left;
+       
 }
 
 .about-title {
-margin-top: 30px  ;
+    margin-top: 30px  ;
 
     font-size: 3em;
     font-weight: 600;
     color: #9a9a9a;
     
     text-align: center;
-
 }
 
 .agileits-about-grid {
     margin-top: 30px  ;
 
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 600;
     color: black;
     text-align: justify;
-}
-
-
-
-
-.agileits-title1 {
-    font-size: 2.5em;
-    text-transform: uppercase;
-    font-weight: 600;
-    margin-bottom: 1.5em;
-    color: #000;
-    text-align: center;
-}
-
-.w3ls-section-contact {
-padding: inherit;
 }

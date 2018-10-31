@@ -15,6 +15,16 @@
 			window.scrollTo(0, 1);
 		}
 	</script>
+    
+    <!-- gallery-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <link href="css/reset.css" rel="stylesheet">
+        <link href="lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+		<link href="css/gallery.css" rel="stylesheet">
+    
+    
 	<!-- Custom Theme files -->
 	<link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
 	<!--gallery -->
@@ -28,8 +38,8 @@
 	<script src="js/jquery-2.2.3.min.js"></script>
 	<!-- //js -->
 	<!-- web-fonts -->
-	<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i" rel="stylesheet">
-	<link href="http://fonts.googleapis.com/css?family=Arsenal:400,400i,700,700i" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Arsenal:400,400i,700,700i" rel="stylesheet">
 	<!-- //web-fonts -->
 </head>
 
@@ -41,13 +51,14 @@
 			<div class="header">
 				<div class="container">
 					<div class="menu">
-						<a href="index.html" id="menuToggle"> <span class="navClosed"></span> </a>
+						<a href="" id="menuToggle"> <span class="navClosed"></span> </a>
 						<nav>
-							<a href="index.html#home" class="active scroll">Головна</a>
-							<a href="index.html#about" class="scroll">Про себе</a>
-							<a href="index.html#gallery" class="scroll">Мої роботи</a>
+							<a href="#home" class="active scroll">Головна</a>
+							<a href="#about" class="scroll">Про себе</a>
+                            <a href="#skills" class="scroll">Вміння</a>
+							<a href="#gallery" class="scroll">Мої роботи</a>
 							
-							<a href="index.html#contact" class="scroll">Контакти</a>
+							<a href="#contact" class="scroll">Контакти</a>
 						</nav>
 						<script>
 							(function ($) {
@@ -75,29 +86,88 @@
 			</div>
 			<!-- //header -->
 			<div class="banner-text">
-				<div class="container">
-					<h2 class="w3ls-bnrtext">Вовчук Уляна</h2>
 				
-				</div>
 			</div>
+            <div class="container">
+                <div class="post-title">
+                <h2> Вовчук Уляна </h2>    
+                </div>
+                
+                    <h3 class="post-meta"> дизайнер та фотограф</h3>
+				</div>
 		</div>
 	</div>
 	<!-- //banner -->
 	<!-- about -->
-	<div class="agile-about w3ls-section text-center">
-                   </div>
-            
-            <div>
-                		<div class="container" id="about"> 
+    <div class="container" id="about"> 
                             <h3 align=left class="about-title" >Про себе</h3>
 			<div class="agileits-about-grid">
-				<p> У 2017 році поступила у Львівську національну академію мистецтв(ЛНАМ). На даний момен є студенткою 3-го курсу кафедри графічного дизайну. Люблю подорожувати та активно проводити свій вільний час.
+				<p> У 2017 році поступила у Львівську національну академію мистецтв (ЛНАМ). На даний момен є студенткою 4-го курсу кафедри графічного дизайну. Люблю подорожувати та активно проводити свій вільний час. У вільний час дуже люблю фотографувати.
 			</div>
 			
 		</div>
-	</div>
+    
 	
 	
+	<!-- gallery -->
+    
+    
+    <div class="container">
+        
+           
+
+            <div id="gallery">
+
+                <figure class="photo">
+                    <a href="images/originals/img-01.jpg" data-lightbox="roadtrip" data-title="Eagle"><img src="images/img-01-min.jpg" alt="Eagle" /></a>
+                    <figcaption>Eagle</figcaption>
+                </figure>
+
+                <figure class="photo">
+                    <a href="images/originals/img-02.jpg" data-lightbox="roadtrip" data-title="Pasta"><img src="images/img-02-min.jpg" alt="Pasta" /></a>
+                    <figcaption>Pasta</figcaption>
+                </figure>
+
+                <figure class="photo">
+                    <a href="images/originals/img-03.jpg" data-lightbox="roadtrip" data-title="Squash"><img src="images/img-03-min.jpg" alt="Squash" /></a>
+                    <figcaption>Squash</figcaption>
+                </figure>
+
+                <figure class="photo">
+                    <a href="images/originals/img-04.jpg" data-lightbox="roadtrip" data-title="Hills"><img src="images/img-04-min.jpg" alt="Hills" /></a>
+                    <figcaption>Hills</figcaption>
+                </figure>
+
+                <figure class="photo">
+                    <a href="images/originals/img-05.jpg" data-lightbox="roadtrip" data-title="Sandwiches"><img src="images/img-05-min.jpg" alt="Sandwiches" /></a>
+                    <figcaption>Sandwiches</figcaption>
+                </figure>
+
+                <figure class="photo">
+                    <a href="images/originals/img-06.jpg" data-lightbox="roadtrip" data-title="Plums"><img src="images/img-06-min.jpg" alt="Plums" /></a>
+                    <figcaption>Plums</figcaption>
+                </figure>
+
+                <figure class="photo">
+                    <a href="images/originals/img-07.jpg" data-lightbox="roadtrip" data-title="Grape"><img src="images/img-07-min.jpg" alt="Grape" /></a>
+                    <figcaption>Grape</figcaption>
+                </figure>
+
+                <figure class="photo">
+                    <a href="images/originals/img-08.jpg" data-lightbox="roadtrip" data-title="Silhouette"><img src="images/img-08-min.jpg" alt="Silhouette" /></a>
+                    <figcaption>Silhouette</figcaption>
+                </figure>
+
+                <figure class="photo">
+                    <a href="images/originals/img-09.jpg" data-lightbox="roadtrip" data-title="Night"><img src="images/img-09-min.jpg" alt="Night" /></a>
+                    <figcaption>Night</figcaption>
+                </figure>
+
+            </div>
+        </div>
+    <script src="lightbox/js/lightbox-plus-jquery.min.js"></script>
+    
+    <!--
 	<div class="w3ls-section agileits-gallery" id="gallery">
         
 		<div class="container">
@@ -328,15 +398,22 @@
 			});
 		</script>
 	</div>
-	<!-- //menu -->
+    
+    <!-- //gallery -->
+    
+    -->
+	
 	
 	
 	<!-- contact -->
     
-    <div class="agile-service w3ls-section-contact" id="skills1">
+    <div class="agile-service w3ls-section" id="skills1">
+	
+			
+    
 	<div class="contact-w3-agileits w3ls-section" id="contact">
 		<div class="container">
-			<h3 class="agileits-title1 cont-w3l">Контакти</h3>
+			<h3 class="agileits-title cont-w3l">Контакти</h3>
 			<div class="contact-main-w3ls">
 				
 					<div class="mail contact-grid-agileinfo">
@@ -433,9 +510,5 @@
     ================================================== -->
 	<!-- Placed at the end of the document so the pages load faster -->
 	<script src="js/bootstrap.js"></script>
-<!--]-->
-
-
-
 </body>
 </html>

@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'FontAwesome';
-  src: url('http://ulianavovchuk.zzz.com.ua/fonts/fontawesome-webfont.eot?v=4.7.0');
-  src: url('http://ulianavovchuk.zzz.com.ua/fonts/fontawesome-webfont.eot?') format('embedded-opentype'), url('http://ulianavovchuk.zzz.com.ua/fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('http://ulianavovchuk.zzz.com.ua/fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('http://ulianavovchuk.zzz.com.ua/fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('http://ulianavovchuk.zzz.com.ua/fonts/fontawesome-webfont.svg?v=4.7.0') format('svg');
+  src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
+  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -623,7 +623,7 @@
 }
 .fa-facebook-f:before,
 .fa-facebook:before {
-  content: "\f082";
+  content: "\f09a";
 }
 .fa-github:before {
   content: "\f09b";
