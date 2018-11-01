@@ -42,7 +42,7 @@ body a:focus {
     background: url(../images/uliana.jpg) fixed;
  /*  background:  #a0afb9 0px fixed; */
     background-size: contain;
-    background-repeat: round;
+    background-repeat: no-repeat;
     
    
 }
