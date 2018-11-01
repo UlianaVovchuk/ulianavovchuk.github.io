@@ -49,7 +49,7 @@ body a:focus {
 .banner-text {
     border-radius: 5px;
     padding: 11em;
-    text-align:center;
+    text-align:left;
 }
 
 
@@ -71,8 +71,8 @@ body a:focus {
 }
 h2.w3ls-bnrtext {
     color: #fff;
-    margin: 0.8em 0 0.2em;
-    font-size: 4em;
+    text-align: right;
+    font-size: 15em;
     font-weight: 400;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -1596,18 +1596,16 @@ ul.w3-links li a i.fa:hover {
   font-family: 'Lora', serif;
   font-weight: normal;
   line-height: 1.8em;
-  font-size: 50px;
-  color: #554848;
-  margin: 13px 0 8px;
-  letter-spacing: 0.08em;
-    text-align: right;
+  font-size: 430%;
+  color: #000000;
+   text-align: right;
 }
 .post-meta {
-  font-size: 30px;
+  font-size: 270%;;
   text-transform: uppercase;
     text-align: right;
   color: #000000;
-  letter-spacing: 0.2em;
+
 }
 
 
