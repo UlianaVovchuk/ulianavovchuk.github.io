@@ -39,18 +39,16 @@ body a:focus {
 /*-- banner --*/
 
 .banner {
-    background: url(../images/uliana.jpg) fixed;
+   background: url(../images/fon1.JPG);
  /*  background:  #a0afb9 0px fixed; */
-    background-size: contain;
+    background-size: 100%;
     background-repeat: no-repeat;
+      
+    
     
    
 }
-.banner-text {
-    border-radius: 5px;
-    padding: 11em;
-    text-align:left;
-}
+
 
 
 /*-- banner-text --*/
@@ -84,7 +82,7 @@ h2.w3ls-bnrtext span {
 
 p.w3ls-p {
     font-size: 1.2em;
-    color: #fff;
+    color: #141414;
     text-transform: capitalize;
     padding-top: 1em;
     letter-spacing: 1px;
@@ -152,7 +150,7 @@ a.buy {
 
 .btn-wayra.button--inverted:hover {
     color: #cfdce5;
-    border-color: #fff;
+    border-color: #ffff;
 }
 
 .btn-wayra:hover::before {
@@ -347,8 +345,8 @@ h3.agileits-title {
     text-transform: uppercase;
     font-weight: 600;
     margin-bottom: 1.5em;
-    color: #1853a1;
-    text-align: center;
+    color: #000000;
+    text-align: left;
 }
 
 a.wthree-.about-link {
@@ -447,9 +445,10 @@ div#skills {
 
 
 div#skills1 {
-    background:  #a0afb9 0px fixed; 
-   /*background: url(../images/11.jpg) fixed;*/
-    background-size: cover;
+    background:  #a0afb9 0px fixed;
+  /* background: url(../images/fon2.JPG);*/
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 /*-- Skills bar effects --*/
@@ -880,7 +879,7 @@ div#services {
 
 .contact-text-agileinfo a {
     line-height: 2;
-    color: #fff;
+    color: #000;
     font-size: 1.1em;
 }
 
@@ -1041,16 +1040,16 @@ ul.w3-links li a i.fa:hover {
 }
 
 
-/*-- //contact --*/
+/*-- //contact останній блок --*/
 
 .agileits_w3layouts-footer {
     text-align: center;
-    padding: 2em 0;
-    background: #1853a1;
+    padding: 2em ;
+    background: #aaaaaa;
 }
 
 .agileits_w3layouts-footer p {
-    color: #fff;
+    color: #000;
     letter-spacing: 1px;
 }
 
@@ -1105,7 +1104,7 @@ ul.w3-links li a i.fa:hover {
 @media screen and (max-width: 1280px){}
 @media screen and (max-width: 1080px){
     .banner-text {
-        padding: 13em 0;
+        padding:;
     }
     .nav-tabs {
         width: 48%;
@@ -1461,9 +1460,9 @@ ul.w3-links li a i.fa:hover {
         width: 70%;
     }
     .contact-icon-wthree {
-        float: none;
-        margin-bottom: 15px;
-        width: 100%;
+        
+        
+        
     }
      .contact-text-agileinfo {
         width: 100%;
@@ -1478,6 +1477,9 @@ ul.w3-links li a i.fa:hover {
     }
     h3.agileits-title.cont-w3l {
         text-transform: capitalize;
+        margin: 20px;
+       
+        
     }
     a.wthree-.about-link{
         padding: 0.5em 1.5em;
@@ -1590,21 +1592,21 @@ ul.w3-links li a i.fa:hover {
 
 
 .post-title {
-  text-transform: uppercase;
+    
+top: 50%;
+    margin-top: 15%;
 }
 .post-title h2 {
   font-family: 'Lora', serif;
-  font-weight: normal;
-  line-height: 1.8em;
-  font-size: 430%;
+  font-weight: bold;
+  line-height: inherit
   color: #000000;
    text-align: right;
 }
 .post-meta {
-  font-size: 270%;;
-  text-transform: uppercase;
-    text-align: right;
+  text-align: right;
   color: #000000;
+vertical-align: middle
 
 }
 
@@ -1624,7 +1626,7 @@ ul.w3-links li a i.fa:hover {
 }
 
 .about-title {
-    margin-top: 30px  ;
+    margin-top: 15%  ;
 
     font-size: 3em;
     font-weight: 600;
@@ -1636,8 +1638,33 @@ ul.w3-links li a i.fa:hover {
 .agileits-about-grid {
     margin-top: 30px  ;
 
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 600;
     color: black;
     text-align: justify;
+}
+
+.my_contakt {
+    font-size: 18px;
+    color: black;
+}
+
+#home {
+    
+}
+
+#contact {
+    
+}
+
+.agileits-title1 {
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 1em;
+    color: #000;
+    text-align: center;
+}
+
+.text_center {
 }
