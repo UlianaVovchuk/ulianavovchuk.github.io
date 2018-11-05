@@ -39,9 +39,9 @@ body a:focus {
 /*-- banner --*/
 
 .banner {
-   background: url(../images/fon1.JPG);
+   background: url(../images/fon1.JPG) 40% / cover lightblue round border-box;;
  /*  background:  #a0afb9 0px fixed; */
-    background-size: 100%;
+    /*background-size: cover;*/
     background-repeat: no-repeat;
       
     
@@ -1461,12 +1461,13 @@ ul.w3-links li a i.fa:hover {
     }
     .contact-icon-wthree {
         
-        
+        text-align: left;
         
     }
      .contact-text-agileinfo {
         width: 100%;
         float: none;
+         text-align: left;
     }
     .contact-grid-agileinfo {
         padding: 1em 0 1.8em;
@@ -1606,7 +1607,8 @@ top: 50%;
 .post-meta {
   text-align: right;
   color: #000000;
-vertical-align: middle
+vertical-align: middle;
+    margin-bottom: 40%;
 
 }
 
@@ -1626,7 +1628,7 @@ vertical-align: middle
 }
 
 .about-title {
-    margin-top: 15%  ;
+    margin-top: 5%  ;
 
     font-size: 3em;
     font-weight: 600;
@@ -1636,12 +1638,12 @@ vertical-align: middle
 }
 
 .agileits-about-grid {
-    margin-top: 30px  ;
-
+    margin-top: 5%;
     font-size: 16px;
     font-weight: 600;
     color: black;
     text-align: justify;
+    margin-bottom: 5%;
 }
 
 .my_contakt {
