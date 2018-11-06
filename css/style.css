@@ -39,7 +39,7 @@ body a:focus {
 /*-- banner --*/
 
 .banner {
-   background: url(../images/fon1.JPG) 40% / cover lightblue round border-box;;
+   background: url(../images/fon1.JPG) 40% / cover lightblue round border-box;
  /*  background:  #a0afb9 0px fixed; */
     /*background-size: cover;*/
     background-repeat: no-repeat;
@@ -445,10 +445,11 @@ div#skills {
 
 
 div#skills1 {
-    background:  #a0afb9 0px fixed;
+    background: url(../images/fon2.JPG) 40% / cover lightblue round border-box;
+   /* background:  #a0afb9 0px fixed;*/
   /* background: url(../images/fon2.JPG);*/
     background-repeat: no-repeat;
-    background-size: 100%;
+    
 }
 
 /*-- Skills bar effects --*/
@@ -860,7 +861,7 @@ div#services {
 
 .contact-main-w3ls {
    
-    background:rgba(134, 213, 234, 0.28) ;
+    background:rgba(255, 255, 255, 0) ;
     background-size: cover;
     text-align: center;
 }
@@ -873,7 +874,7 @@ div#services {
 }
 
 .contact-right-w3l h3:before {
-    width: 3%;
+    width: %;
     position: center;
 }
 
@@ -891,7 +892,7 @@ div#services {
 
 .contact-left-w3ls h4 {
     
-    color: #49c7ed;
+    color: rgba(73, 199, 237, 0);
     font-weight: 600;
     margin-top: 0.4em;
     font-size: 1.2em;
@@ -976,16 +977,16 @@ div#services {
 
 .contact-right-w3l {
     padding: 5em 12em;
-    border-right: 1px solid rgba(255, 255, 255, 0.29);
+    border-right: 1px solid rgba(255, 255, 255, 0);
 }
 
 .contact-grid-agileinfo {
     padding: 3em;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.29);
+    border-bottom: 1px solid rgba(239, 237, 237, 0.08);
 }
 
 .visit {
-    border: none;
+    
 }
 
 .contact-main ::-webkit-input-placeholder {
@@ -1015,7 +1016,8 @@ ul.w3-links li {
 }
 
 ul.w3-links {
-    margin-top: 0;
+    margin-top: 5px;
+
 }
 
 ul.w3-links li a i.fa {
@@ -1054,7 +1056,7 @@ ul.w3-links li a i.fa:hover {
 }
 
 .agileits_w3layouts-footer p a {
-    color: #7ecaf6;
+    color: #f6957e;
     text-decoration: none;
     -webkit-transition: .5s all;
     -moz-transition: .5s all;
@@ -1110,7 +1112,7 @@ ul.w3-links li a i.fa:hover {
         width: 48%;
     }
     .services-grid.agileits-w3layouts {
-        margin-top: 7em;
+        margin-top: 2em;
     }
 }
 @media screen and (max-width: 1050px){}
@@ -1465,7 +1467,7 @@ ul.w3-links li a i.fa:hover {
         
     }
      .contact-text-agileinfo {
-        width: 100%;
+        width: 10%;
         float: none;
          text-align: left;
     }
@@ -1479,6 +1481,7 @@ ul.w3-links li a i.fa:hover {
     h3.agileits-title.cont-w3l {
         text-transform: capitalize;
         margin: 20px;
+        text-align: left;
        
         
     }
@@ -1649,6 +1652,8 @@ vertical-align: middle;
 .my_contakt {
     font-size: 18px;
     color: black;
+    font-weight: 400;
+    text-align: left;
 }
 
 #home {
@@ -1665,7 +1670,7 @@ vertical-align: middle;
     font-weight: 600;
     margin-bottom: 1em;
     color: #000;
-    text-align: center;
+    text-align: left;
 }
 
 .text_center {
